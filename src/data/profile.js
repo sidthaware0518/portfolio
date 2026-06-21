@@ -22,11 +22,11 @@ export const profile = {
 
   // ---- Social links ----
   socials: {
-    github: "https://github.com/Siddharth181920",
-    linkedin: "https://linkedin.com/in/sid-thaware",
+    github: "https://github.com/sidthaware0518",
+    linkedin: "https://www.linkedin.com/in/sidthaware0518",
     twitter: "",
   },
-  githubUsername: "Siddharth181920",
+  githubUsername: "sidthaware0518",
 
   // ---- Hero tagline & objective ----
   tagline:
