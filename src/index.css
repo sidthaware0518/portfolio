@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for in-page anchor links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* offset for the fixed navbar */
+}
+
+body {
+  @apply bg-navy-950 text-slate-200 font-sans antialiased;
+}
+
+/* Light mode body */
+html:not(.dark) body {
+  @apply bg-slate-100 text-slate-800;
+}
+
+/* ===== Reusable utility classes ===== */
+@layer components {
+  /* Glassmorphism card */
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl;
+  }
+  html:not(.dark) .glass {
+    @apply bg-white/70 border-slate-200 shadow-lg;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-400 via-accent to-brand-500 bg-clip-text text-transparent;
+  }
+
+  /* Primary button */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white
+           bg-gradient-to-r from-brand-600 to-brand-500 shadow-lg shadow-brand-600/30
+           transition-all duration-300 hover:shadow-brand-500/50 hover:-translate-y-0.5;
+  }
+
+  /* Ghost / outline button */
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold
+           border border-white/20 text-slate-200 transition-all duration-300
+           hover:border-brand-400 hover:text-brand-300 hover:-translate-y-0.5;
+  }
+  html:not(.dark) .btn-ghost {
+    @apply border-slate-300 text-slate-700 hover:text-brand-600;
+  }
+
+  .section-title {
+    @apply font-display text-3xl md:text-4xl font-bold mb-3;
+  }
+  .section-sub {
+    @apply text-slate-400 max-w-2xl mx-auto mb-12;
+  }
+  html:not(.dark) .section-sub { @apply text-slate-500; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#2563eb, #22d3ee);
+  border-radius: 999px;
+}
