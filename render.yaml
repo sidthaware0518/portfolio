@@ -2,7 +2,7 @@
 # In Render: "New +" → "Blueprint" → connect the repo and it reads this file.
 services:
   - type: web
-    name: sid-t-0518
+    name: portfolio-sidt0518
     runtime: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
