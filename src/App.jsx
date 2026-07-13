@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
+import GyaanVaultBanner from "./components/GyaanVaultBanner.jsx";
 import About from "./components/About.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
@@ -17,6 +18,8 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        {/* Entry point to the GyaanVault notes platform (additive banner) */}
+        <GyaanVaultBanner />
         <About />
         <Skills />
         <Projects />

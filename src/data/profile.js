@@ -17,7 +17,15 @@ export const profile = {
   location: "Pune, Maharashtra, India",
   email: "sid.t05.18@gmail.com",
   phone: "+91 7558788603",
-  resumeUrl: "/resume.pdf", // your resume PDF is already in /public
+  // Domain-specific resumes — the hero "Download Resume" button opens a menu of these.
+  // Add/reorder freely; the first entry is treated as the default/primary resume.
+  resumes: [
+    { label: "Data Scientist", url: "/resumes/Siddheshwar-Thaware-Data-Scientist.pdf" },
+    { label: "Data Analyst", url: "/resumes/Siddheshwar-Thaware-Data-Analyst.pdf" },
+    { label: "Python Developer", url: "/resumes/Siddheshwar-Thaware-Python-Developer.pdf" },
+    { label: "SQL Developer", url: "/resumes/Siddheshwar-Thaware-SQL-Developer.pdf" },
+  ],
+  resumeUrl: "/resumes/Siddheshwar-Thaware-Data-Scientist.pdf", // default (kept for backward compat)
   photo: "/profile.jpg", // save your headshot as public/profile.jpg (falls back to initials)
 
   // ---- Social links ----
@@ -138,7 +146,7 @@ export const projects = [
     impact:
       "Improves behavioral pattern insights, enabling early intervention for teen digital wellbeing.",
     image: "",
-    github: "https://github.com/Siddharth181920", // TODO: link the exact repo
+    github: "https://github.com/sidthaware0518", // TODO: link the exact repo
     demo: "",
   },
   {
@@ -155,7 +163,7 @@ export const projects = [
     results: "Reduced issue resolution time by 20%.",
     impact: "Faster troubleshooting and measurable service-quality improvement.",
     image: "",
-    github: "https://github.com/Siddharth181920", // TODO: link the exact repo
+    github: "https://github.com/sidthaware0518", // TODO: link the exact repo
     demo: "",
   },
   {

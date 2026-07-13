@@ -3,3 +3,8 @@ dist/
 .DS_Store
 *.local
 .vite/
+
+# Source drop-folders — the served copies live in public/, so we don't
+# commit these large originals twice.
+MSC Notes and Syllabus/
+Resume different domain/

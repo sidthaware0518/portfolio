@@ -6,8 +6,27 @@ services:
     runtime: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
-    # SPA fallback: serve index.html for any path (single-page app routing).
+    # Serve the pre-rendered (SEO) HTML for the notes routes explicitly, so the
+    # canonical extensionless URLs (e.g. /notes) return real content to Google
+    # instead of the empty SPA shell. Specific rules must come BEFORE the
+    # catch-all SPA fallback.
     routes:
+      - type: rewrite
+        source: /notes
+        destination: /notes/index.html
+      - type: rewrite
+        source: /notes/semester-1
+        destination: /notes/semester-1/index.html
+      - type: rewrite
+        source: /notes/semester-2
+        destination: /notes/semester-2/index.html
+      - type: rewrite
+        source: /notes/semester-3
+        destination: /notes/semester-3/index.html
+      - type: rewrite
+        source: /notes/semester-4
+        destination: /notes/semester-4/index.html
+      # SPA fallback: serve index.html for any other path (client-side routing).
       - type: rewrite
         source: /*
         destination: /index.html

@@ -1,4 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/notes", "destination": "/notes/index.html" },
+    { "source": "/notes/semester-1", "destination": "/notes/semester-1/index.html" },
+    { "source": "/notes/semester-2", "destination": "/notes/semester-2/index.html" },
+    { "source": "/notes/semester-3", "destination": "/notes/semester-3/index.html" },
+    { "source": "/notes/semester-4", "destination": "/notes/semester-4/index.html" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }

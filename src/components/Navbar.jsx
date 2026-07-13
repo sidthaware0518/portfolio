@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import ThemeToggle from "./ThemeToggle.jsx";
 
@@ -42,6 +43,12 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          {/* Routed link to the GyaanVault notes platform (not a hash anchor) */}
+          <li>
+            <Link to="/notes" className="text-brand-300 hover:text-brand-400 transition-colors">
+              Notes Section
+            </Link>
+          </li>
         </ul>
 
         <div className="flex items-center gap-3">
@@ -70,6 +77,15 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li>
+            <Link
+              to="/notes"
+              onClick={() => setOpen(false)}
+              className="block px-3 py-2 rounded-lg text-brand-300 hover:bg-white/10 transition-colors"
+            >
+              Notes Section
+            </Link>
+          </li>
         </ul>
       )}
     </header>

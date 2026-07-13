@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" fill="none" role="img" aria-label="GyaanVault decorative banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1124"/>
+      <stop offset="50%" stop-color="#0f1a36"/>
+      <stop offset="100%" stop-color="#070b1a"/>
+    </linearGradient>
+    <radialGradient id="glowL" cx="18%" cy="30%" r="45%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR" cx="85%" cy="75%" r="45%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#bg)"/>
+  <rect width="1200" height="340" fill="url(#glowL)"/>
+  <rect width="1200" height="340" fill="url(#glowR)"/>
+
+  <!-- faint dotted grid -->
+  <g fill="#93c5fd" fill-opacity="0.10">
+    <circle cx="60" cy="60" r="2"/><circle cx="160" cy="60" r="2"/><circle cx="260" cy="60" r="2"/><circle cx="360" cy="60" r="2"/><circle cx="460" cy="60" r="2"/><circle cx="560" cy="60" r="2"/><circle cx="660" cy="60" r="2"/><circle cx="760" cy="60" r="2"/><circle cx="860" cy="60" r="2"/><circle cx="960" cy="60" r="2"/><circle cx="1060" cy="60" r="2"/><circle cx="1160" cy="60" r="2"/>
+    <circle cx="60" cy="160" r="2"/><circle cx="160" cy="160" r="2"/><circle cx="260" cy="160" r="2"/><circle cx="360" cy="160" r="2"/><circle cx="460" cy="160" r="2"/><circle cx="560" cy="160" r="2"/><circle cx="660" cy="160" r="2"/><circle cx="760" cy="160" r="2"/><circle cx="860" cy="160" r="2"/><circle cx="960" cy="160" r="2"/><circle cx="1060" cy="160" r="2"/><circle cx="1160" cy="160" r="2"/>
+    <circle cx="60" cy="260" r="2"/><circle cx="160" cy="260" r="2"/><circle cx="260" cy="260" r="2"/><circle cx="360" cy="260" r="2"/><circle cx="460" cy="260" r="2"/><circle cx="560" cy="260" r="2"/><circle cx="660" cy="260" r="2"/><circle cx="760" cy="260" r="2"/><circle cx="860" cy="260" r="2"/><circle cx="960" cy="260" r="2"/><circle cx="1060" cy="260" r="2"/><circle cx="1160" cy="260" r="2"/>
+  </g>
+
+  <!-- analytics network -->
+  <g stroke="url(#line)" stroke-width="2" stroke-opacity="0.5">
+    <line x1="120" y1="250" x2="300" y2="150"/>
+    <line x1="300" y1="150" x2="470" y2="210"/>
+    <line x1="470" y1="210" x2="660" y2="110"/>
+    <line x1="660" y1="110" x2="860" y2="180"/>
+    <line x1="860" y1="180" x2="1080" y2="90"/>
+  </g>
+  <g fill="#22d3ee">
+    <circle cx="120" cy="250" r="5"/><circle cx="300" cy="150" r="5"/><circle cx="470" cy="210" r="5"/><circle cx="660" cy="110" r="6"/><circle cx="860" cy="180" r="5"/><circle cx="1080" cy="90" r="6"/>
+  </g>
+</svg>
